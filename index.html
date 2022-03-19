@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/css/reset.css">
     <link rel="stylesheet" href="./styles/css/index.css">
     <title>Calculadora</title>
 </head>
 <body>
+    <main class="calc-container">
+        <div class="operation-container">
+            <input id="operation-input" type="text" value="1+1">
+            <span id="delete"><img src="./images/delete.svg" alt=""></span>
+        </div>
+        
+        <div class="keyboard">
+            <div class="key">C</div>
+            <div class="key">( )</div>
+            <div class="key">%</div>
+            <div class="key">÷</div>
+            <div class="key">7</div>
+            <div class="key">8</div>
+            <div class="key">9</div>
+            <div class="key">x</div>
+            <div class="key">4</div>
+            <div class="key">5</div>
+            <div class="key">6</div>
+            <div class="key">-</div>
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+            <div class="key">+</div>
+            <div class="key">+/-</div>
+            <div class="key">0</div>
+            <div class="key">.</div>
+            <div class="key">=</div>
+        </div>
+    </main>
     <script src="./scripts/script.js"></script>
 </body>
 </html>
