@@ -12,33 +12,33 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <main class="calc-container">
-        <div class="operation-container">
-            <input id="operation-input" type="text" value="1+1">
-            <span id="delete"><img src="./images/delete.svg" alt=""></span>
+    <main class="calc">
+        <div class="calc__display">
+            <input class="calc__input" type="text" value="1+1">
+            <span class="calc__delete"><img class="calc__delete-img" src="./images/delete.svg" alt=""></span>
         </div>
         
-        <div class="keyboard">
-            <div class="key">C</div>
-            <div class="key">( )</div>
-            <div class="key">%</div>
-            <div class="key">÷</div>
-            <div class="key">7</div>
-            <div class="key">8</div>
-            <div class="key">9</div>
-            <div class="key">x</div>
-            <div class="key">4</div>
-            <div class="key">5</div>
-            <div class="key">6</div>
-            <div class="key">-</div>
-            <div class="key">1</div>
-            <div class="key">2</div>
-            <div class="key">3</div>
-            <div class="key">+</div>
-            <div class="key">+/-</div>
-            <div class="key">0</div>
-            <div class="key">.</div>
-            <div class="key">=</div>
+        <div class="calc__keyboard">
+            <div class="calc__key calc__key--red">C</div>
+            <div class="calc__key calc__key--green">( )</div>
+            <div class="calc__key calc__key--green">%</div>
+            <div class="calc__key calc__key--green">÷</div>
+            <div class="calc__key">7</div>
+            <div class="calc__key">8</div>
+            <div class="calc__key">9</div>
+            <div class="calc__key calc__key--green">x</div>
+            <div class="calc__key">4</div>
+            <div class="calc__key">5</div>
+            <div class="calc__key">6</div>
+            <div class="calc__key calc__key--green">-</div>
+            <div class="calc__key">1</div>
+            <div class="calc__key">2</div>
+            <div class="calc__key">3</div>
+            <div class="calc__key calc__key--green">+</div>
+            <div class="calc__key">+/-</div>
+            <div class="calc__key">0</div>
+            <div class="calc__key">.</div>
+            <div class="calc__key calc__key--green-btn">=</div>
         </div>
     </main>
     <script src="./scripts/script.js"></script>

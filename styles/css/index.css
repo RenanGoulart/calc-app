@@ -1,7 +1,4 @@
-body {
-  background: #222;
-}
-body .calc-container {
+.calc {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-end;
@@ -13,12 +10,12 @@ body .calc-container {
   background: #000;
   color: #fff;
 }
-body .calc-container .operation-container {
+.calc__display {
   width: 230px;
   height: min-content;
   margin: 55px auto 0;
 }
-body .calc-container .operation-container #operation-input {
+.calc__input {
   width: 200px;
   height: 36px;
   padding-right: 10px;
@@ -29,14 +26,14 @@ body .calc-container .operation-container #operation-input {
   outline: 0;
   border: 0;
 }
-body .calc-container .operation-container #delete {
+.calc__delete {
   cursor: pointer;
 }
-body .calc-container .operation-container #delete img {
+.calc__delete-img {
   width: 20px;
   height: 12px;
 }
-body .calc-container .operation-container #delete::after {
+.calc__delete::after {
   display: block;
   content: "";
   width: 230px;
@@ -44,7 +41,7 @@ body .calc-container .operation-container #delete::after {
   background: #787878;
   margin-top: 5px;
 }
-body .calc-container .keyboard {
+.calc__keyboard {
   display: grid;
   grid-template-columns: repeat(4, 50px);
   grid-column-gap: 10px;
@@ -52,7 +49,7 @@ body .calc-container .keyboard {
   width: min-content;
   margin: 20px auto 10px;
 }
-body .calc-container .keyboard .key {
+.calc__key {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,7 +60,16 @@ body .calc-container .keyboard .key {
   background: #222;
   cursor: pointer;
 }
-body .calc-container .keyboard .key:nth-of-type(2) {
+.calc__key--red {
+  color: #DF6262;
+}
+.calc__key--green {
+  color: #7AD872;
+}
+.calc__key--green-btn {
+  background: #37B12C;
+}
+.calc__key:nth-of-type(2) {
   font-size: 1.25em;
 }
 
