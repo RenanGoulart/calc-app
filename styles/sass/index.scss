@@ -15,37 +15,32 @@
     &__display{
         width: 230px;
         height: min-content;
-        margin: 55px auto 0; 
+        margin: 30px auto 0; 
     }
 
-    &__input{
-        width: 200px;
-        height: 36px;
-        padding-right: 10px;
-        font-size: 1.5em;
-        text-align: right;
-        background: transparent;
-        color: palette.$white;
-        outline: 0;
-        border: 0;
-    }
-
-    &__delete{
-        cursor: pointer;
-    }
-
-    &__delete-img{
-        width: 20px;
-        height: 12px;
-    }
-        
-    &__delete::after{
+    &__display::after{
         display: block;
         content: "";
         width: 230px;
         height: 1px;
         background: palette.$secondary-gray;
         margin-top: 5px
+    }
+
+    &__previous-number,
+    &__current-number{
+        width: 230px;
+        height: 20px;
+        font-size: 1em;
+        text-align: right;
+        background: transparent;
+        color: palette.$secondary-gray;
+    }
+
+    &__current-number{
+        height: 36px;
+        font-size: 1.5em;
+        color: palette.$white;
     } 
 
     &__keyboard{
@@ -55,6 +50,10 @@
         grid-row-gap: 5px;
         width: min-content;
         margin: 20px auto 10px;
+    }
+
+    &__delete-img{
+        width: 20px;
     }
 
     &__key{
@@ -77,9 +76,5 @@
         &--green-btn{
             background: palette.$secondary-green;
         }
-    }
-
-    &__key:nth-of-type(2){
-        font-size: 1.25em;
     }
 }

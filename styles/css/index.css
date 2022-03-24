@@ -13,33 +13,28 @@
 .calc__display {
   width: 230px;
   height: min-content;
-  margin: 55px auto 0;
+  margin: 30px auto 0;
 }
-.calc__input {
-  width: 200px;
-  height: 36px;
-  padding-right: 10px;
-  font-size: 1.5em;
-  text-align: right;
-  background: transparent;
-  color: #fff;
-  outline: 0;
-  border: 0;
-}
-.calc__delete {
-  cursor: pointer;
-}
-.calc__delete-img {
-  width: 20px;
-  height: 12px;
-}
-.calc__delete::after {
+.calc__display::after {
   display: block;
   content: "";
   width: 230px;
   height: 1px;
   background: #787878;
   margin-top: 5px;
+}
+.calc__previous-number, .calc__current-number {
+  width: 230px;
+  height: 20px;
+  font-size: 1em;
+  text-align: right;
+  background: transparent;
+  color: #787878;
+}
+.calc__current-number {
+  height: 36px;
+  font-size: 1.5em;
+  color: #fff;
 }
 .calc__keyboard {
   display: grid;
@@ -48,6 +43,9 @@
   grid-row-gap: 5px;
   width: min-content;
   margin: 20px auto 10px;
+}
+.calc__delete-img {
+  width: 20px;
 }
 .calc__key {
   display: flex;
@@ -68,9 +66,6 @@
 }
 .calc__key--green-btn {
   background: #37B12C;
-}
-.calc__key:nth-of-type(2) {
-  font-size: 1.25em;
 }
 
 /*# sourceMappingURL=index.css.map */
